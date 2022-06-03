@@ -5,6 +5,5 @@ x=x/2;
 while (x>50) {
     num++;
     x=x/2;
-    console.log(x);
 }
 console.log(num);
