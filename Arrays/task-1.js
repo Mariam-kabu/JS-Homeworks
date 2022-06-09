@@ -35,7 +35,6 @@ try {
     const arr3 = [[[[[1,2]]],2],1];
     const arr4 = [[[[[]]]]];
     const arr5 = [[[[[],3]]]];
-    f(5);
     f(arr);
     f(arr2);
     f(arr3);
