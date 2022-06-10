@@ -1,7 +1,7 @@
 function rotate(array, number, string) {
     if (!Array.isArray(array) || typeof array === 'undefined') {
         throw new Error ('The first parameter is required and it has to be only an array');
-    } else if (typeof number !== 'number') {
+    } else if (typeof number !== 'number' || typeof number === 'undefined') {
         throw new Error ('The second parameter is required and it has to be a number');
     } else if (typeof string === 'undefined' || string === 'right') {
         for (let i=0; i<number; i++) {
