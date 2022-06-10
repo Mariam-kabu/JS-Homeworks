@@ -4,9 +4,10 @@ function reverse (arr) {
     } else if (arr.length === 0) {
         throw new Error ('The array shouldn\'t be empty')
     } else {
-        for (let i=arr.length-1; i>=0; i--){
-            console.log(arr[i]);
+        for (let i = 0; i < Math.floor(arr.length / 2); i++) {
+            [arr[i], arr[arr.length - 1 - i]] = [arr[arr.length - 1 - i], arr[i]];
         }
+        console.log(arr);
     }
 }
 
