@@ -22,10 +22,7 @@ function rotate(array, number, string) {
     } else {
         throw new Error ('The third parameter isn\'t valid')
     }
-
-    for (i=0; i<array.length; i++) {
-        console.log(array[i]);
-    }
+    console.log(array);
 }
 
 try {
