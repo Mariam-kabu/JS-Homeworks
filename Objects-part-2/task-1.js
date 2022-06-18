@@ -2,7 +2,7 @@ Object.defineProperty(Object.prototype, "mergeDeepRight", {
     value: (source) => {      
         const keys = Object.getOwnPropertyNames(source);
         for (let key of keys) {
-            if (typeof source === "object" && !Array.isArray(source[key]) && this.hasOwnProperty(key)) {
+            if (typeof source[key] === "object" && !Array.isArray(source[key]) && this.hasOwnProperty(key)) {
                 this[key].mergeDeepRight(source[key]);
             } else if (Array.isArray(source[key]) && Array.isArray(this.hasOwnProperty(key))) {
                 this[key] = this[key].concat(source[key]);
@@ -37,4 +37,4 @@ data.mergeDeepRight({
     }
 });
 
-console.log(data);
+console.log(data.contact.meta.tags);
