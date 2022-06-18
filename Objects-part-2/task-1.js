@@ -37,4 +37,4 @@ data.mergeDeepRight({
     }
 });
 
-console.log(data.contact.meta.tags);
+console.log(data);
