@@ -14,10 +14,6 @@ class Student extends User {
         this.year = year;
         if (this.year < 2018) throw new Error;
     }
-    getFullName() {
-        return super.getFullName();
-
-    }
     getCourse() {
         let presentYear = new Date().getFullYear();
         return presentYear - this.year;
